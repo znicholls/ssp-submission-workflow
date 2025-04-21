@@ -1,0 +1,10 @@
+# Changes here will be overwritten by Copier
+_commit: v0.4.2
+_src_path: gl:openscm/copier-basic-python-repository
+email: nicholls@iiasa.ac.at
+name: Zebedee Nicholls
+notebooks: true
+package_manager: uv
+project_description_short: Offline running of the CMIP7 ScenarioMIP emissions harmonisation
+    and SCM climate assessment.
+project_url: https://github.com/iiasa/ssp-submission-workflow
