@@ -7,6 +7,13 @@ dependencies = [
     "pre-commit>=3.3.1",
     "jupyterlab>=4.0.0",
     "jupytext>=1.15.2",
+    "pandas>=2.2.3",
+    "pandas-indexing>=0.6.3",
+    "pandas-openscm>=0.4.1",
+    "gcages",
+    "pyarrow>=19.0.1",
+    "openpyxl>=3.1.5",
+    "tqdm>=4.67.1",
 ]
 name = "prototype"
 version = "0.1.0"
@@ -15,6 +22,9 @@ readme = "README.md"
 
 [tool.uv]
 package = false
+
+[tool.uv.sources]
+gcages = { git = "https://github.com/openscm/gcages", rev = "9f5542c2cfd8e29aa611f19804540bb4dda5da2d" }
 
 [tool.jupytext]
 formats = "ipynb,py:percent"
@@ -35,6 +45,7 @@ select = [
 ]
 unfixable = [ ]
 ignore = [
+    "D100",  # working in notebooks hence ignore
     "D200",
     "D400",
     "UP007",

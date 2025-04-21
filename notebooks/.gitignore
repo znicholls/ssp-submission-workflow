@@ -1,3 +1,6 @@
+# Default output path
+0001
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
